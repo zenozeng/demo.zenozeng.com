@@ -1,0 +1,29 @@
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;src:local('EB Garamond'),local('EBGaramond'),url(EB-Garamond.woff)}::-webkit-scrollbar-track-piece{background-color:#ccc}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:#777}
+html,body,input,ul,li{padding:0;margin:0;font-family:"EB Garamond","NSimSun","SimSun","STSong","AR PL SungtiL GB","TW\-Sung","WenQuanYi Bitmap Song"}
+ul,li{list-style:none}
+#bg{background:url(persimmon_black.jpg) no-repeat;background-size:cover;position:fixed;top:0;left:0;width:100%;height:100%;z-index:1}#bg #bg-filter{background:rgba(0,0,0,0.7);background:#fff;width:100%;height:100%}
+#bar{width:100%;height:50px;background:#000;color:#fff;line-height:50px;position:fixed;top:0;left:0;z-index:3}
+#search{float:left;margin-left:305px;height:30px;width:500px;margin-top:9px}#search #search-input{border:none;width:250px;float:left;line-height:18px;padding:6px;border-right:none;outline:none;transition:all .3s}
+#search i{background:#555;color:#fff;float:left;height:30px;display:block;line-height:31px;width:30px;text-align:center;cursor:pointer;transition:all .3s;background:#c63038}
+#user{float:right;padding-right:24px}#user span{padding:0 6px;cursor:pointer;transition:all .3s}#user span:hover{color:#c63038}
+#menu{width:200px;background:#fff;position:fixed;top:80px;left:20px;z-index:4}#menu>ul>li{font-size:18px;margin:20px 28px;color:#000}#menu>ul>li>ul{margin-top:.5em}#menu>ul>li>ul:after{clear:both;display:block;content:''}
+#menu>ul>li>ul>li{cursor:pointer;transition:all .3s;float:left;font-size:14px;padding-right:.5em;color:#555;line-height:18px}#menu>ul>li>ul>li:hover{color:#c63038}
+#logo{position:fixed;top:0;left:0;font-size:24px;line-height:50px;background:#000;width:220px;color:#fff;text-align:center;z-index:5}
+#index{width:100%;position:absolute;top:90px;z-index:2}#index #index-inner{height:1000px;margin-left:300px;margin-right:50px}
+#gallery{position:relative;transition:all .3s;background:#fff;height:380px;width:864px;margin:6px;background:url(../images/light.jpg);background-size:cover}#gallery #gallery-title{position:absolute;top:50%;right:70px;margin-top:-24px;color:#fff;font-size:48px;text-shadow:0 0 8px #777}
+#gallery #gallery-info{padding:20px;position:absolute;bottom:0;right:0}#gallery #gallery-info .fa-circle{cursor:pointer;color:#fff}#gallery #gallery-info .fa-circle.current{color:#555;color:#c63038}
+#items .section:after{clear:both;display:block;content:''}
+#items .section .title{color:#fff;line-height:36px;font-size:36px;padding:12px 0;width:300px;margin:12px 6px;margin-top:36px;text-shadow:0 0 8px #000;color:#000;text-shadow:none;border-color:#000}
+#items .section .items-a{float:left}#items .section .items-a .item img,#items .section .items-a .item .info{width:210px;height:432px;line-height:432px}
+#items .section .items-b{float:left}#items .section .items-b .item img,#items .section .items-b .item .info{width:210px;height:210px;line-height:210px}
+#items .section .items-b .item:last-child{position:relative;top:-5px}
+#items .section .items-c{float:left}#items .section .items-c .item img,#items .section .items-c .item .info{width:420px;height:432px;line-height:432px}
+#items .section .item{position:relative;padding:6px}#items .section .item .info{position:absolute;left:6px;bottom:11px;display:none;text-align:center;width:100%;height:100%;color:#fff;font-size:24px;font-weight:bold;background:rgba(0,0,0,0.5);z-index:5}#items .section .item .info span{font-size:16px;padding-left:1em}
+#items .section .item img{width:100%;height:100%}
+#footer{width:868px;margin-left:6px;height:72px;background:#fff;background:rgba(255,255,255,0.5);padding-top:12px;margin-top:72px;border-top:3px solid #000}#footer #footer-logo{background:#000;color:#fff;float:left;font-size:48px;padding:0 24px}
+#footer table{padding-top:6px;padding-left:24px;float:left}#footer table td,#footer table th{text-align:center}
+#footer table th{font-size:18px;width:160px;line-height:24px}
+#footer table td{font-size:14px;letter-spacing:3px}
+#footer table i{padding:0 3px}
