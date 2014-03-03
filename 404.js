@@ -6,7 +6,7 @@ var data = {
     },
     vs: {
         "name": "VS",
-        "url": "http://duck.zenozeng.com:42000/",
+        "redirect": "http://duck.zenozeng.com:42000/",
         "description": "vs"
     }
 };
@@ -16,9 +16,13 @@ var key = paths.shift();
 var path = paths.join('/');
 if(typeof data[key] != "undefined") {
     var item = data[key];
-    var html = '<iframe src="';
-    html += item.url;
-    html += path;
-    html += '" frameborder="0" scrolling="auto" width="100%" height="100%"></iframe>';
-    document.body.innerHTML = html;
+    if( item.redirect ) {
+        window.location.href = item.redirect + path;
+    } else {
+        var html = '<iframe src="';
+        html += item.url;
+        html += path;
+        html += '" frameborder="0" scrolling="auto" width="100%" height="100%"></iframe>';
+        document.body.innerHTML = html;
+    }
 }
